@@ -1,0 +1,8 @@
+/envku
+envku/
+*envku
+*.pyc
+_pycache_/
+envku/
+*.pyc
+_pycache_/
