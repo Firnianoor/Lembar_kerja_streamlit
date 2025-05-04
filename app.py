@@ -237,22 +237,23 @@ st.audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3')
 #7. Menampilkan Layout dan Container
 #7.1. Menampilkan Layout Menggunakan Kolom
 # Membuat dua kolom
+st.title("Menampilkan Layout Menggunakan Kolom")
 col1, col2 = st.columns(2)
 
 # Menampilkan konten di kolom pertama
 with col1:
-    st.header("Kolom 1")
-    st.write("Ini adalah konten di kolom pertama.")
-    st.button("Tombol Kolom 1")
+    st.header("Tugas 1")
+    st.write("Ini adalah konten di Tugas pertama.")
+    st.button("Tombol Tugas 1")
 
 # Menampilkan konten di kolom kedua
 with col2:
-    st.header("Kolom 2")
-    st.write("Ini adalah konten di kolom kedua.")
-    st.button("Tombol Kolom 2")
+    st.header("Tugas 2")
+    st.write("Ini adalah konten di Tugas kedua.")
+    st.button("Tombol Tugas 2")
 
 #7.2 Menggunakan st.expander() untuk Konten yang Bisa Dilipat
-with st.expander("Klik untuk melihat lebih banyak"):
+with st.expander("Klik untuk lebih lanjut"):
     st.write("Ini adalah konten tersembunyi yang bisa dilihat saat pengguna klik expander.")
     st.image("https://via.placeholder.com/150", caption="Contoh Gambar")
 
@@ -262,9 +263,10 @@ container = st.container()
 
 # Menambahkan elemen ke dalam container
 with container:
-    st.header("Konten di dalam Container")
-    st.write("Ini adalah elemen-elemen yang ada dalam container.")
-    st.button("Tombol dalam Container")
+    st.header("Formulir Pengumpulan Link")
+    st.write("Masukkan link tugas Anda pada kolom di bawah ini.")
+    st.text_input("Tautan Tugas", placeholder="Tempel link di sini")
+    st.button("Kumpulkan Link")
 
 #7.4 Menggunakan Sidebar
 # Menambahkan elemen ke Sidebar
